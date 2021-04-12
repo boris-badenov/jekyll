@@ -213,6 +213,8 @@ Minitest/RefutePathExists:
   Enabled: true
 Minitest/UnspecifiedException:
   Enabled: true
+Minitest/AssertEmptyLiteral:
+  Enabled: false
 
 Naming/FileName:
   Enabled: false
@@ -283,6 +285,8 @@ Style/ArrayCoercion:
 Style/BisectedAttrAccessor:
   Enabled: true
 Style/CaseLikeIf:
+  Enabled: true
+Style/StringChars:
   Enabled: true
 Style/ClassAndModuleChildren:
   Exclude:

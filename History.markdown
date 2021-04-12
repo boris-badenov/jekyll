@@ -11,6 +11,9 @@
   * Remove GitHub Pages content which is in GitHub docs (#8533)
   * Step By Step Instructions Review (#8399)
   * Fix typo in migrating from 3.0 to 4.0 page (#8572)
+  * Fix for important missing step in macOS Installation Docs: Add the Homebrew gems directory to the PATH (#8496)
+  * Use latest Jekyll-action configuration (#8579)
+  * docs: troubleshoot macOS with ARM64 architecture (#8560)
 
 ### Bug Fixes
 
@@ -23,10 +26,12 @@
   * Update actions/cache requirement to v2.1.3 (#8543)
   * Pin rubocop version (#8564)
   * style: add rubocop 1.9 cops (#8567)
+  * Cross Version Testing Locally and Faster CI (#8610)
 
 ### Minor Enhancements
 
   * Regenerate supported mime types (#8542)
+  * Update include tag to be more permissive (#8618)
 
 ## 4.2.0 / 2020-12-14
 
@@ -323,6 +328,12 @@
 ### Development Fixes
 
   * Fix Kramdown converter based tests for v4.0.x (#8143)
+
+## 3.9.1 / 2021-04-08
+
+### Bug Fixes
+
+  * Backport #8618 for v3.9.x: Update include tag to be more permissive (#8629)
 
 ## 3.9.0 / 2020-08-05
 
