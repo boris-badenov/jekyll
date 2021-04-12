@@ -309,5 +309,18 @@ module Jekyll
       raise Jekyll::Errors::InvalidConfigurationError,
             "'plugins' should be set as an array, but was: #{config["plugins"].inspect}."
     end
+    
+    # backward compatibility as in 3.9, for github-pages
+    def fix_common_issues
+      config = clone
+
+      if config.key?('paginate') && (!config['paginate'].is_a?(Integer) || config['paginate'] < 1)
+        Jekyll.logger.warn "Config Warning:", "The `paginate` key must be a" +
+          " positive integer or nil. It's currently set to '#{config['paginate'].inspect}'."
+        config['paginate'] = nil
+      end
+
+      config
+    end
   end
 end
