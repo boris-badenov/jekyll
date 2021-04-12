@@ -375,6 +375,6 @@ module Jekyll
 
       # Strip according to the mode
       string.gsub(replaceable_char, "-")
-    end  
+    end
   end
 end
